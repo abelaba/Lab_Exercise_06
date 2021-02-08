@@ -35,14 +35,14 @@ let myDB = loadfromDB();
 function a(){
     myDB = sortAscending(); 
     clearAllTasks();
-    localStorage.setItem('tasks',JSON.stringify(myDB))
+    localStorage.setItem('tasks',JSON.stringify(myDB));
     location.reload();
 }
 
 function b(){
     myDB = sortDescending();
     clearAllTasks();
-    localStorage.setItem('tasks',JSON.stringify(myDB)) 
+    localStorage.setItem('tasks',JSON.stringify(myDB)); 
     location.reload();
 }
 

@@ -55,14 +55,14 @@ function removefromDB(taskItem) {
 
 function sortAscending(){
 
-    return loadfromDB().sort()
+    return loadfromDB().sort();
     
 
 }
 
 function sortDescending(){
 
-    return loadfromDB().sort().reverse()
+    return loadfromDB().sort().reverse();
     
 
 }
