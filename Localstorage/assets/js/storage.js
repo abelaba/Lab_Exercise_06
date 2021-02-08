@@ -1,16 +1,22 @@
 function addToDatabase(newTask)
 {
    let listofTasks;
+   let dates;
    if(localStorage.getItem('tasks') == null)
    {
        listofTasks = [];
+       dates = []
    }
    else
    {
        listofTasks = JSON.parse(localStorage.getItem('tasks'));
+       dates = JSON.parse(localStorage.getItem('dates'))
    }
+    date = new Date();
+    dates.push(date)
     listofTasks.push(newTask);
     localStorage.setItem('tasks', JSON.stringify(listofTasks));
+    localStorage.setItem('dates',JSON.stringify(dates) )
 }
 
 
