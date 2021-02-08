@@ -127,6 +127,7 @@ function addNewTask(e) {
 function clearAllTasks() {
 
     clearAllTasksFromDB()
+    location.reload()
 
 }
 
