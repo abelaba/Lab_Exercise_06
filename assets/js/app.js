@@ -39,7 +39,12 @@ function a(){
     location.reload();
 }
 
-
+function b(){
+    myDB = sortDescending();
+    clearAllTasks();
+    localStorage.setItem('tasks',JSON.stringify(myDB)) 
+    location.reload();
+}
 
 
 

@@ -60,3 +60,9 @@ function sortAscending(){
 
 }
 
+function sortDescending(){
+
+    return loadfromDB().sort().reverse()
+    
+
+}
